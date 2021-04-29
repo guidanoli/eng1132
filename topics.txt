@@ -1,20 +1,64 @@
+Ungergraduate thesis topics
+---------------------------
+
+- Motivation
+	- Why would Python and Lua need to talk to each other?
+	- How would Python and Lua communication take shape?
+
 - Using Python in Lua
 	- Introduction
-		- Why and how would Python be used in Lua?
-		- What will we be covering in this section?
 	- Basic object types
 		- None
-		- Integers
-		- Floats
 		- Booleans
+		- Integers
+			- Overflow handling
+		- Floats
 		- String
 	- Complex object types
 		- The Python object metatable
+		- Object initializing
 		- Object finalizing (__gc)
 		- Object calling (__call)
+			- Bound methods
+			- Keyword arguments
 		- Object indexing (__index, __newindex)
+			- Attribute x Item indexation
 		- Object representing (__tostring)
-		- Optimizations (object caching, packed arguments pre-processing)
+		- Optimizations
+			- Object caching
+			- Argument pre-processing
 	- Error handling
-		- Integer overflow
-		- Python exceptions
+
+- Using Lua in Python
+	- Introduction
+	- Basic object types
+		- Nil
+		- Booleans
+		- Numbers
+		- Strings
+	- Complex object types
+		- The _LuaObject class
+		- The _LuaTable, _LuaFunction and _LuaThread subclasses
+		- Object initializing
+		- Object finalizing (__dealloc__)
+		- Object calling (__call__)
+		- Object indexing (__getattr__, __setattr__, __getitem__, __setitem__)
+		- Object representing (__str__)
+		- Object length (__len__)
+		- Table iteration (__iter__)
+			- keys, values, items
+		- Table entry deletion (__delattr__, __delitem__)
+		- Coroutine orchestration
+	- Error handling
+
+- Porting Lupa to Lua
+	- Introduction
+	- The current usage of Lupa
+	- The new intended usage of Lupa
+		- Pre-existing Lua state
+		- Necessary changes
+	- Embedding Lua versus embedding Python
+	- Initializing and finalizing Python
+	- Importing Lupa in embedded Python
+	- Initializing the Lua runtime in Python
+	- Quality changes
