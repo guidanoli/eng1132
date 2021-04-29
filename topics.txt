@@ -1,0 +1,20 @@
+- Using Python in Lua
+	- Introduction
+		- Why and how would Python be used in Lua?
+		- What will we be covering in this section?
+	- Basic object types
+		- None
+		- Integers
+		- Floats
+		- Booleans
+		- String
+	- Complex object types
+		- The Python object metatable
+		- Object finalizing (__gc)
+		- Object calling (__call)
+		- Object indexing (__index, __newindex)
+		- Object representing (__tostring)
+		- Optimizations (object caching, packed arguments pre-processing)
+	- Error handling
+		- Integer overflow
+		- Python exceptions
