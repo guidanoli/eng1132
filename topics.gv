@@ -1,0 +1,4 @@
+digraph topics {
+	DataPython2Lua [label=<Data transfer from<BR/>Python to Lua>];
+	DataLua2Python [label=<Data transfer from<BR/>Lua to Python>];
+}
