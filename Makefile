@@ -1,11 +1,13 @@
 # Makefile for drawing the 'topics' digraph
+DOT=dot
+OPEN=xdg-open
 
 all: topics.png
 
 topics.png: topics.gv
-	dot -Tpng $< -o $@
+	${DOT} -Tpng $< -o $@
 
-show:
-	xdg-open topics.png
+show: topics.png
+	${OPEN} $^
 
 .PHONY: all show

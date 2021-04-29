@@ -1,4 +1,31 @@
 digraph topics {
-	DataPython2Lua [label=<Data transfer from<BR/>Python to Lua>];
-	DataLua2Python [label=<Data transfer from<BR/>Lua to Python>];
+	node [shape=rectangle]
+
+	n1  [label=<Using Python in Lua>]
+	n2  [label=<Converting Python<BR/>objects to Lua objects>]
+	n3  [label=<Calling Python<BR/>objects in Lua>]
+	n4  [label=<Getting and setting<BR/>Python object<BR/>attributes in Lua>]
+	n5  [label=<Wrapping Python<BR/>objects in Lua userdata>]
+	n7  [label=<Converting or wrapping<BR/>Python None to Lua>]
+	n8  [label=<Converting Python<BR/>strings to Lua>]
+	n9  [label=<Handling Python<BR/>exceptions in Lua>]
+	n10 [label=<Converting Python<BR/>numbers to Lua>]
+	
+	n1 -> n2
+	n1 -> n3
+	n1 -> n4
+	n1 -> n9
+
+	n2 -> n5
+	n2 -> n7
+	n2 -> n8
+	n2 -> n10
+
+	n3 -> n2
+	n3 -> n9
+
+	n4 -> n2
+	n4 -> n9
+
+	n9 -> n8
 }
