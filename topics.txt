@@ -1,9 +1,19 @@
 Undergraduate thesis topics
 ---------------------------
 
+- Introduction
+	- Programming languages
+	- Scripting languages
+		- C APIs
+	- What are Lua and Python?
+		- How are they similar?
+		- How are they different?
+	- Bridging Lua and Python through C
+
 - Motivation
 	- Why would Python and Lua need to communicate?
 	- How would the communication between Python and Lua take shape?
+	- The Lupa project and the purpose of this work
 
 - Using Python in Lua
 	- Introduction
@@ -32,6 +42,7 @@ Undergraduate thesis topics
 		- Additional functionalities
 			- Printing Python objects (__tostring)
 	- Error handling
+	- Compiling Python code
 
 - Using Lua in Python
 	- Introduction
@@ -49,8 +60,11 @@ Undergraduate thesis topics
 		- Iterating through Lua tables (__iter__)
 			- keys, values, items
 		- Table entry deletion (__delattr__, __delitem__)
+		- Additional functionalities
+			- Printing Lua objects (__str__)
 		- Coroutine orchestration
 	- Error handling
+	- Compiling Lua code
 
 - Porting Lupa to Lua
 	- Introduction
@@ -62,4 +76,3 @@ Undergraduate thesis topics
 	- Initializing and finalizing Python
 	- Importing Lupa in embedded Python
 	- Initializing the Lua runtime in Python
-	- Quality changes
