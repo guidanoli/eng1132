@@ -13,7 +13,10 @@ Undergraduate thesis topics
 - Motivation
 	- Why would Python and Lua need to communicate?
 	- How would the communication between Python and Lua take shape?
-	- The Lupa project and the purpose of this work
+	- The Lupa project: its strengths and its weaknesses
+
+- Methodology
+	- Code inspection and refactoring
 
 - Using Python in Lua
 	- Introduction
@@ -76,3 +79,7 @@ Undergraduate thesis topics
 	- Initializing and finalizing Python
 	- Importing Lupa in embedded Python
 	- Initializing the Lua runtime in Python
+
+- Conclusion
+	- Did we achieve the goals set by our motivation?
+	- Future improvements
