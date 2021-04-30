@@ -2,18 +2,18 @@ Undergraduate thesis topics
 ---------------------------
 
 - Introduction
-	- Programming languages
 	- Scripting languages
-		- C APIs
-	- What are Lua and Python?
-		- How are they similar?
-		- How are they different?
-	- Bridging Lua and Python through C
-
-- Motivation
-	- Why would Python and Lua need to communicate?
-	- How would the communication between Python and Lua take shape?
-	- The Lupa project: its strengths and its weaknesses
+		- Lua and Python: their similarities and differences
+	- Communication between scripting languages
+		- Why would Python and Lua need to communicate?
+		- How would the communication between Python and Lua take shape?
+			- Scripting languages as C APIs
+			- Idea: a two-way bridge between Lua and Python in C
+				- The Lupa project: its strengths and its weaknesses
+				- Target platforms: Linux and Windows
+				- Programming languages: ANSI C, Python 2.7 and 3.x, Lua 5.1+
+				  and Cython 0.29
+				- Why is this project adequate for an undergraduate thesis?
 
 - Methodology
 	- Code inspection and refactoring
