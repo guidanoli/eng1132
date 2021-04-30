@@ -1,9 +1,9 @@
-Ungergraduate thesis topics
+Undergraduate thesis topics
 ---------------------------
 
 - Motivation
-	- Why would Python and Lua need to talk to each other?
-	- How would Python and Lua communication take shape?
+	- Why would Python and Lua need to communicate?
+	- How would the communication between Python and Lua take shape?
 
 - Using Python in Lua
 	- Introduction
@@ -13,20 +13,24 @@ Ungergraduate thesis topics
 		- Integers
 			- Overflow handling
 		- Floats
-		- String
+		- Strings
 	- Complex object types
-		- The Python object metatable
-		- Object initializing
-		- Object finalizing (__gc)
-		- Object calling (__call)
+		- The Python object userdata
+		- Initializing Python objects
+		- Finalizing Python objects (__gc)
+		- Python objects attributes and items (__index, __newindex)
+			- Access protocols
+			- Wrapping Python None
+		- Calling Python objects (__call)
 			- Bound methods
 			- Keyword arguments
-		- Object indexing (__index, __newindex)
-			- Attribute x Item indexation
-		- Object representing (__tostring)
+		- Iterating through Python objects (iter, iterex, enumerate)
+			- Wrapping Python None
 		- Optimizations
 			- Object caching
 			- Argument pre-processing
+		- Additional functionalities
+			- Printing Python objects (__tostring)
 	- Error handling
 
 - Using Lua in Python
@@ -37,15 +41,12 @@ Ungergraduate thesis topics
 		- Numbers
 		- Strings
 	- Complex object types
-		- The _LuaObject class
-		- The _LuaTable, _LuaFunction and _LuaThread subclasses
-		- Object initializing
-		- Object finalizing (__dealloc__)
-		- Object calling (__call__)
-		- Object indexing (__getattr__, __setattr__, __getitem__, __setitem__)
-		- Object representing (__str__)
-		- Object length (__len__)
-		- Table iteration (__iter__)
+		- The Lua object class
+		- Initializing Lua objects
+		- Finalizing Lua objects (__dealloc__)
+		- Lua objects fields (__getattr__, __setattr__, __getitem__, __setitem__)
+		- Calling Lua objects (__call__)
+		- Iterating through Lua tables (__iter__)
 			- keys, values, items
 		- Table entry deletion (__delattr__, __delitem__)
 		- Coroutine orchestration
